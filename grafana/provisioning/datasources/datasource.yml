@@ -1,0 +1,19 @@
+apiVersion: 1
+
+deleteDatasources:
+  - name: Apple Watch InfluxDB
+    orgId: 1
+
+datasources:
+  - name: Apple Watch InfluxDB
+    type: influxdb
+    access: proxy
+    orgId: 1
+    url: http://apple_watch_influxdb:8086
+    database: apple_watch
+    jsonData:
+      timeInterval: 1d
+    isDefault: true
+    editable: true
+    options:
+      path: /etc/grafana/provisioning/dashboards

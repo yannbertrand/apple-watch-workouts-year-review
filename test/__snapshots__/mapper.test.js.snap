@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mapper(attributes) with existing workoutActivityType should set a "creationDate" ISO date key 1`] = `"2019-12-17T19:57:46.000Z"`;
+
+exports[`mapper(attributes) with existing workoutActivityType should set a "duration" float key 1`] = `6.115610067049662`;
+
+exports[`mapper(attributes) with existing workoutActivityType should set a "endDate" ISO date key 1`] = `"2019-12-17T19:57:46.000Z"`;
+
+exports[`mapper(attributes) with existing workoutActivityType should set a "sourceName" key 1`] = `"Yann's Apple Watch"`;
+
+exports[`mapper(attributes) with existing workoutActivityType should set a "sourceVersion" key 1`] = `"5.2.1"`;
+
+exports[`mapper(attributes) with existing workoutActivityType should set a "startDate" ISO date key 1`] = `"2019-12-17T19:51:39.000Z"`;
+
+exports[`mapper(attributes) with existing workoutActivityType should set a "totalDistance" float key 1`] = `1.759895436402728`;
+
+exports[`mapper(attributes) with existing workoutActivityType should set a "totalEnergyBurned" float key 1`] = `32.742351690196`;
+
+exports[`mapper(attributes) with existing workoutActivityType should set a "type" key 1`] = `"cycling"`;
+
+exports[`mapper(attributes) with existing workoutActivityType should set an "id" key 1`] = `"2019-12-17 20:51:39 +01002019-12-17 20:57:46 +0100HKWorkoutActivityTypeCycling6.1156100670496621.75989543640272832.742351690196"`;

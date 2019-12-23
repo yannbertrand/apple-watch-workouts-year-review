@@ -1,0 +1,26 @@
+{
+  "name": "apple-watch-workouts-year-review",
+  "version": "0.1.0",
+  "description": "Insert your Apple Watch Workouts data in an InfluxDB database",
+  "main": "index.js",
+  "repository": "git@github.com:yannbertrand/apple-watch-workouts-year-review.git",
+  "author": "Yann Bertrand <5855339+yannbertrand@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "influx": "^5.5.1",
+    "sax": "^1.2.4",
+    "unzipper": "^0.10.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0"
+  }
+}
