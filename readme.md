@@ -24,9 +24,9 @@ yarn install
 
 ## 🚀 Usage
 
-The project runs an InfluxDB database and a Grafana instance, launch them with docker-compose:
+The project runs an InfluxDB database and a Grafana instance, launch them with docker compose:
 ```sh
-docker-compose up -d
+docker compose up -d
 ```
 
 In the meantime, export your Apple Watch data from your iPhone. In the Health App:
@@ -39,7 +39,7 @@ Send the zip file to your computer.
 
 Then run:
 ```sh
-yarn start <path_to_export.zip>
+npm start <path_to_export.zip>
 ```
 Grab a coffee while your data is read and inserted in InfluxDB (my data takes more than a minute to be loaded)!
 
@@ -65,9 +65,9 @@ Because I didn't take time to find them automatically (cycling, walking, swimmin
 
 ### How do I update my data?
 
-You'll have to export the zip file and run `yarn start export.zip` again.
+You'll have to export the zip file and run `npm start export.zip` again.
 
-### I got an error while running `yarn start export.zip`, what should I do?
+### I got an error while running `npm start export.zip`, what should I do?
 
 If you have this kind of error:
 
@@ -85,7 +85,7 @@ For any other error, please [open an issue](https://github.com/yannbertrand/appl
 ## 🚧 Run unit tests
 
 ```sh
-yarn test
+npm test
 ```
 
 ## Show your support
