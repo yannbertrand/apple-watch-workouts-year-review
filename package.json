@@ -7,13 +7,12 @@
   "author": "Yann Bertrand <5855339+yannbertrand@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
+    "start": "node --env-file-if-exists=.env index.js",
     "lint": "biome check .",
     "format": "biome check --write .",
     "test": "jest"
   },
   "dependencies": {
-    "dotenv": "^8.6.0",
     "influx": "^5.9.3",
     "sax": "^1.4.1",
     "unzipper": "^0.10.14",
