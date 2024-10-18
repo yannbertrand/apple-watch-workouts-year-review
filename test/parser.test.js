@@ -3,7 +3,8 @@ const createParser = require('../lib/parser')
 const workout = require('./samples/apple-workout.json')
 
 describe('parser(handler)', () => {
-  let handler, parser
+  let handler
+  let parser
 
   beforeEach(() => {
     handler = {

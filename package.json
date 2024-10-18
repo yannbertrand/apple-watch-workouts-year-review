@@ -8,8 +8,8 @@
   "license": "MIT",
   "scripts": {
     "start": "babel-node index.js",
-    "lint": "prettier --check .",
-    "format": "prettier --write .",
+    "lint": "biome check .",
+    "format": "biome check --write .",
     "test": "jest"
   },
   "dependencies": {
@@ -22,8 +22,8 @@
   "devDependencies": {
     "@babel/core": "^7.25.8",
     "@babel/node": "^7.25.7",
+    "@biomejs/biome": "^1.9.4",
     "babel-jest": "^24.9.0",
-    "jest": "^24.9.0",
-    "prettier": "^2.8.8"
+    "jest": "^24.9.0"
   }
 }
