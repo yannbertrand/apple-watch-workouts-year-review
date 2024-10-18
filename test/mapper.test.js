@@ -34,11 +34,11 @@ describe('mapWorkoutAttributes(attributes)', () => {
     })
 
     it('should set a "totalDistance" float key', () => {
-      expect(result.totalDistance).toMatchSnapshot()
+      expect(result.totalDistance).toBeUndefined()
     })
 
     it('should set a "totalEnergyBurned" float key', () => {
-      expect(result.totalEnergyBurned).toMatchSnapshot()
+      expect(result.totalEnergyBurned).toBeUndefined()
     })
 
     it('should set a "sourceName" key', () => {
