@@ -1,11 +1,11 @@
 apiVersion: 1
 
 providers:
-- name: Apple Watch InfluxDB
-  orgId: 1
-  folder: ''
-  type: file
-  disableDeletion: true
-  editable: true
-  options:
-    path: /etc/grafana/provisioning/dashboards
+  - name: Apple Watch InfluxDB
+    orgId: 1
+    folder: ""
+    type: file
+    disableDeletion: true
+    editable: true
+    options:
+      path: /etc/grafana/provisioning/dashboards

@@ -11,7 +11,7 @@ describe('parser(handler)', () => {
       onOpenTag: jest.fn(),
       onCloseTag: jest.fn(),
       onEnd: jest.fn(),
-      onError: jest.fn()
+      onError: jest.fn(),
     }
 
     parser = createParser(handler)
