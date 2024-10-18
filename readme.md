@@ -1,8 +1,9 @@
 # Welcome to Apple Watch Workouts year review 👋
+
 [![Build Status](https://img.shields.io/github/actions/workflow/status/yannbertrand/apple-watch-workouts-year-review/test)](https://github.com/yannbertrand/apple-watch-workouts-year-review/actions/workflows/test.yml)
 ![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./license)
-[![Twitter: \_YannBertrand](https://img.shields.io/twitter/follow/\_YannBertrand.svg?style=social)](https://twitter.com/\_YannBertrand)
+[![Twitter: _YannBertrand](https://img.shields.io/twitter/follow/_YannBertrand.svg?style=social)](https://twitter.com/_YannBertrand)
 
 **Stability: 1 - Experimental**
 
@@ -25,6 +26,7 @@ yarn install
 ## 🚀 Usage
 
 The project runs an InfluxDB database and a Grafana instance, launch them with docker compose:
+
 ```sh
 docker compose up -d
 ```
@@ -38,16 +40,18 @@ In the meantime, export your Apple Watch data from your iPhone. In the Health Ap
 Send the zip file to your computer.
 
 Then run:
+
 ```sh
 npm start <path_to_export.zip>
 ```
+
 Grab a coffee while your data is read and inserted in InfluxDB (my data takes more than a minute to be loaded)!
 
 📈 Once the script ends, your Grafana dashboard should be available at http://localhost:3000/d/apple-watch-workouts/year-dashboard?orgId=1.
 
 **This dashboard is just a proof of concept**, take full advantage of Grafana, try to edit the panels and even add yours if you want to!
 
-> *Please make sure to show me your dashboard on [Twitter](https://twitter.com/intent/tweet?text=Hey%20@_YannBertrand%20%F0%9F%91%8B%0A%0A%F0%9F%93%88%20Take%20a%20look%20at%20my%202019%20workouts%20dashboard) 😁*
+> _Please make sure to show me your dashboard on [Twitter](https://twitter.com/intent/tweet?text=Hey%20@_YannBertrand%20%F0%9F%91%8B%0A%0A%F0%9F%93%88%20Take%20a%20look%20at%20my%202019%20workouts%20dashboard) 😁_
 
 ## ❓ Questions
 
@@ -92,5 +96,6 @@ npm test
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
