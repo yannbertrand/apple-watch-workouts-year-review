@@ -1,17 +1,16 @@
-const mapper = require('../lib/mapper')
+const { mapWorkoutAttributes } = require('../lib/mapper')
 
 const sampleWorkout = require('./samples/apple-workout.json')
 
-describe('mapper(attributes)', () => {
-
+describe('mapWorkoutAttributes(attributes)', () => {
   describe('with non existing workoutActivityType', () => {
     it('should throw an Error', () => {
       const sampleAttributes = {
         ...sampleWorkout,
-        workoutActivityType: "HKWorkoutActivityTypeSleeping",
+        workoutActivityType: 'HKWorkoutActivityTypeSleeping',
       }
 
-      expect(() => mapper(sampleAttributes)).toThrow()
+      expect(() => mapWorkoutAttributes(sampleAttributes)).toThrow()
     })
   })
 
@@ -19,7 +18,7 @@ describe('mapper(attributes)', () => {
     let result
 
     beforeEach(() => {
-      result = mapper(sampleWorkout)
+      result = mapWorkoutAttributes(sampleWorkout)
     })
 
     it('should set an "id" key', () => {
@@ -62,5 +61,4 @@ describe('mapper(attributes)', () => {
       expect(result.endDate).toMatchSnapshot()
     })
   })
-
 })
