@@ -9,6 +9,7 @@ describe('parser(handler)', () => {
     handler = {
       onStart: jest.fn(),
       onOpenTag: jest.fn(),
+      onCloseTag: jest.fn(),
       onEnd: jest.fn(),
       onError: jest.fn()
     }
@@ -28,6 +29,14 @@ describe('parser(handler)', () => {
       const node = { name: 'Workout', attributes: workout }
       parser.emit('opentag', node)
       expect(handler.onOpenTag).toHaveBeenCalledWith(node.name, node.attributes)
+    })
+  })
+
+  describe('on closetag(node)', () => {
+    it('should call handler.onClosetag', () => {
+      const nodeName = 'Workout'
+      parser.emit('closetag', nodeName)
+      expect(handler.onCloseTag).toHaveBeenCalledWith(nodeName)
     })
   })
 

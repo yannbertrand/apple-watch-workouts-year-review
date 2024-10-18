@@ -1,6 +1,8 @@
 const Handler = require('../lib/handler')
 
 const sampleWorkout = require('./samples/apple-workout.json')
+const sampleWorkoutEnergyStats = require('./samples/apple-workout-energy-stats.json')
+const sampleWorkoutDistanceStats = require('./samples/apple-workout-distance-stats.json')
 const mappedWorkout = require('./samples/mapped-workout.json')
 
 describe('handler', () => {
@@ -31,6 +33,9 @@ describe('handler', () => {
     describe('with name == "Workout"', () => {
       beforeEach(() => {
         handler.onOpenTag('Workout', sampleWorkout)
+        handler.onOpenTag('WorkoutStatistics', sampleWorkoutEnergyStats)
+        handler.onOpenTag('WorkoutStatistics', sampleWorkoutDistanceStats)
+        handler.onCloseTag('Workout')
       })
 
       describe('when workout has never been added', () => {
@@ -42,6 +47,7 @@ describe('handler', () => {
       describe('when workout has already been added', () => {
         it('should emit JSON data only one time to the parser', () => {
           handler.onOpenTag('Workout', sampleWorkout)
+          handler.onCloseTag('Workout')
           expect(parser.emit).toHaveBeenCalledTimes(1)
         })
       })
@@ -53,5 +59,4 @@ describe('handler', () => {
       expect(() => handler.onError('An error occured')).toThrow()
     })
   })
-
 })
