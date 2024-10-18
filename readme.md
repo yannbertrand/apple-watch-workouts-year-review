@@ -1,5 +1,5 @@
 # Welcome to Apple Watch Workouts year review 👋
-[![Build Status](https://travis-ci.org/yannbertrand/apple-watch-workouts-year-review.svg?branch=master)](https://travis-ci.org/yannbertrand/apple-watch-workouts-year-review)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/yannbertrand/apple-watch-workouts-year-review/test)](https://github.com/yannbertrand/apple-watch-workouts-year-review/actions/workflows/test.yml)
 ![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./license)
 [![Twitter: \_YannBertrand](https://img.shields.io/twitter/follow/\_YannBertrand.svg?style=social)](https://twitter.com/\_YannBertrand)
