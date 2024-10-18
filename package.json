@@ -14,7 +14,8 @@
     "dotenv": "^8.6.0",
     "influx": "^5.9.3",
     "sax": "^1.4.1",
-    "unzipper": "^0.10.14"
+    "unzipper": "^0.10.14",
+    "yargs": "^17.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.8",
