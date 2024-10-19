@@ -777,7 +777,7 @@
         "x": 10,
         "y": 19
       },
-      "id": 11,
+      "id": 10,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -795,9 +795,9 @@
       "nullPointMode": "connected",
       "nullText": null,
       "options": {},
-      "postfix": " swims",
+      "postfix": " runs",
       "postfixFontSize": "70%",
-      "prefix": "🏊‍♂️",
+      "prefix": "🏃‍♂️",
       "prefixFontSize": "100%",
       "rangeMaps": [
         {
@@ -841,7 +841,7 @@
             {
               "key": "type",
               "operator": "=",
-              "value": "swimming"
+              "value": "running"
             }
           ]
         }
@@ -849,7 +849,7 @@
       "thresholds": "",
       "timeFrom": null,
       "timeShift": null,
-      "title": "Swimming",
+      "title": "Running",
       "type": "singlestat",
       "valueFontSize": "80%",
       "valueMaps": [
@@ -1307,7 +1307,7 @@
         "x": 10,
         "y": 24
       },
-      "id": 8,
+      "id": 9,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -1368,7 +1368,7 @@
             {
               "key": "type",
               "operator": "=",
-              "value": "swimming"
+              "value": "running"
             }
           ]
         }
@@ -1413,7 +1413,7 @@
         "x": 12,
         "y": 24
       },
-      "id": 29,
+      "id": 30,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -1473,7 +1473,7 @@
             {
               "key": "type",
               "operator": "=",
-              "value": "swimming"
+              "value": "running"
             }
           ]
         }
@@ -1938,7 +1938,7 @@
         "x": 10,
         "y": 28
       },
-      "id": 25,
+      "id": 24,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -1998,7 +1998,7 @@
             {
               "key": "type",
               "operator": "=",
-              "value": "swimming"
+              "value": "running"
             }
           ]
         }
@@ -2043,7 +2043,7 @@
         "x": 13,
         "y": 28
       },
-      "id": 33,
+      "id": 34,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -2103,7 +2103,7 @@
             {
               "key": "type",
               "operator": "=",
-              "value": "swimming"
+              "value": "running"
             }
           ]
         }
@@ -2568,7 +2568,7 @@
         "x": 10,
         "y": 32
       },
-      "id": 50,
+      "id": 51,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -2628,7 +2628,7 @@
             {
               "key": "type",
               "operator": "=",
-              "value": "swimming"
+              "value": "running"
             }
           ]
         }
@@ -2673,7 +2673,7 @@
         "x": 12,
         "y": 32
       },
-      "id": 53,
+      "id": 54,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -2733,7 +2733,7 @@
             {
               "key": "type",
               "operator": "=",
-              "value": "swimming"
+              "value": "running"
             }
           ]
         }
@@ -2790,6 +2790,115 @@
         "h": 5,
         "w": 5,
         "x": 0,
+        "y": 37
+      },
+      "id": 11,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": " swims",
+      "postfixFontSize": "70%",
+      "prefix": "🏊‍♂️",
+      "prefixFontSize": "100%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false,
+        "ymax": null,
+        "ymin": null
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "groupBy": [],
+          "measurement": "workouts",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "totalDistance"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "count"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "swimming"
+            }
+          ]
+        }
+      ],
+      "thresholds": "",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Swimming",
+      "type": "singlestat",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "total"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": true,
+      "colors": [
+        "#73BF69",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "datasource": "default",
+      "decimals": null,
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 5,
+        "x": 5,
         "y": 37
       },
       "id": 62,
@@ -2865,115 +2974,6 @@
       "timeFrom": null,
       "timeShift": null,
       "title": "Strength Training",
-      "type": "singlestat",
-      "valueFontSize": "80%",
-      "valueMaps": [
-        {
-          "op": "=",
-          "text": "N/A",
-          "value": "null"
-        }
-      ],
-      "valueName": "total"
-    },
-    {
-      "cacheTimeout": null,
-      "colorBackground": false,
-      "colorValue": true,
-      "colors": [
-        "#73BF69",
-        "rgba(237, 129, 40, 0.89)",
-        "#d44a3a"
-      ],
-      "datasource": "default",
-      "decimals": null,
-      "format": "none",
-      "gauge": {
-        "maxValue": 100,
-        "minValue": 0,
-        "show": false,
-        "thresholdLabels": false,
-        "thresholdMarkers": true
-      },
-      "gridPos": {
-        "h": 5,
-        "w": 5,
-        "x": 5,
-        "y": 37
-      },
-      "id": 10,
-      "interval": null,
-      "links": [],
-      "mappingType": 1,
-      "mappingTypes": [
-        {
-          "name": "value to text",
-          "value": 1
-        },
-        {
-          "name": "range to text",
-          "value": 2
-        }
-      ],
-      "maxDataPoints": 100,
-      "nullPointMode": "connected",
-      "nullText": null,
-      "options": {},
-      "postfix": " runs",
-      "postfixFontSize": "70%",
-      "prefix": "🏃‍♂️",
-      "prefixFontSize": "100%",
-      "rangeMaps": [
-        {
-          "from": "null",
-          "text": "N/A",
-          "to": "null"
-        }
-      ],
-      "sparkline": {
-        "fillColor": "rgba(31, 118, 189, 0.18)",
-        "full": false,
-        "lineColor": "rgb(31, 120, 193)",
-        "show": false,
-        "ymax": null,
-        "ymin": null
-      },
-      "tableColumn": "",
-      "targets": [
-        {
-          "groupBy": [],
-          "measurement": "workouts",
-          "orderByTime": "ASC",
-          "policy": "default",
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "totalDistance"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "count"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "type",
-              "operator": "=",
-              "value": "running"
-            }
-          ]
-        }
-      ],
-      "thresholds": "",
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Running",
       "type": "singlestat",
       "valueFontSize": "80%",
       "valueMaps": [
@@ -3115,8 +3115,219 @@
       },
       "gridPos": {
         "h": 4,
-        "w": 3,
+        "w": 2,
         "x": 0,
+        "y": 42
+      },
+      "id": 8,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "pluginVersion": "6.5.2",
+      "postfix": " km",
+      "postfixFontSize": "70%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false,
+        "ymax": null,
+        "ymin": null
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "groupBy": [],
+          "measurement": "workouts",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "totalDistance"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "swimming"
+            }
+          ]
+        }
+      ],
+      "thresholds": "",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Total",
+      "type": "singlestat",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "total"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": true,
+      "colors": [
+        "#5794F2",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "datasource": "default",
+      "decimals": 2,
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 2,
+        "y": 42
+      },
+      "id": 29,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": " km",
+      "postfixFontSize": "70%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false,
+        "ymax": null,
+        "ymin": null
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "groupBy": [],
+          "measurement": "workouts",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "totalDistance"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "swimming"
+            }
+          ]
+        }
+      ],
+      "thresholds": "",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Average",
+      "type": "singlestat",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "avg"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": true,
+      "colors": [
+        "#5794F2",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "datasource": "default",
+      "decimals": null,
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 5,
         "y": 42
       },
       "id": 63,
@@ -3222,7 +3433,7 @@
       "gridPos": {
         "h": 4,
         "w": 2,
-        "x": 3,
+        "x": 8,
         "y": 42
       },
       "id": 64,
@@ -3286,217 +3497,6 @@
               "key": "type",
               "operator": "=",
               "value": "strength"
-            }
-          ]
-        }
-      ],
-      "thresholds": "",
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Average",
-      "type": "singlestat",
-      "valueFontSize": "80%",
-      "valueMaps": [
-        {
-          "op": "=",
-          "text": "N/A",
-          "value": "null"
-        }
-      ],
-      "valueName": "avg"
-    },
-    {
-      "cacheTimeout": null,
-      "colorBackground": false,
-      "colorValue": true,
-      "colors": [
-        "#5794F2",
-        "rgba(237, 129, 40, 0.89)",
-        "#d44a3a"
-      ],
-      "datasource": "default",
-      "decimals": null,
-      "format": "none",
-      "gauge": {
-        "maxValue": 100,
-        "minValue": 0,
-        "show": false,
-        "thresholdLabels": false,
-        "thresholdMarkers": true
-      },
-      "gridPos": {
-        "h": 4,
-        "w": 2,
-        "x": 5,
-        "y": 42
-      },
-      "id": 9,
-      "interval": null,
-      "links": [],
-      "mappingType": 1,
-      "mappingTypes": [
-        {
-          "name": "value to text",
-          "value": 1
-        },
-        {
-          "name": "range to text",
-          "value": 2
-        }
-      ],
-      "maxDataPoints": 100,
-      "nullPointMode": "connected",
-      "nullText": null,
-      "options": {},
-      "pluginVersion": "6.5.2",
-      "postfix": " km",
-      "postfixFontSize": "70%",
-      "prefix": "",
-      "prefixFontSize": "50%",
-      "rangeMaps": [
-        {
-          "from": "null",
-          "text": "N/A",
-          "to": "null"
-        }
-      ],
-      "sparkline": {
-        "fillColor": "rgba(31, 118, 189, 0.18)",
-        "full": false,
-        "lineColor": "rgb(31, 120, 193)",
-        "show": false,
-        "ymax": null,
-        "ymin": null
-      },
-      "tableColumn": "",
-      "targets": [
-        {
-          "groupBy": [],
-          "measurement": "workouts",
-          "orderByTime": "ASC",
-          "policy": "default",
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "totalDistance"
-                ],
-                "type": "field"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "type",
-              "operator": "=",
-              "value": "running"
-            }
-          ]
-        }
-      ],
-      "thresholds": "",
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Total",
-      "type": "singlestat",
-      "valueFontSize": "80%",
-      "valueMaps": [
-        {
-          "op": "=",
-          "text": "N/A",
-          "value": "null"
-        }
-      ],
-      "valueName": "total"
-    },
-    {
-      "cacheTimeout": null,
-      "colorBackground": false,
-      "colorValue": true,
-      "colors": [
-        "#5794F2",
-        "rgba(237, 129, 40, 0.89)",
-        "#d44a3a"
-      ],
-      "datasource": "default",
-      "decimals": 2,
-      "format": "none",
-      "gauge": {
-        "maxValue": 100,
-        "minValue": 0,
-        "show": false,
-        "thresholdLabels": false,
-        "thresholdMarkers": true
-      },
-      "gridPos": {
-        "h": 4,
-        "w": 3,
-        "x": 7,
-        "y": 42
-      },
-      "id": 30,
-      "interval": null,
-      "links": [],
-      "mappingType": 1,
-      "mappingTypes": [
-        {
-          "name": "value to text",
-          "value": 1
-        },
-        {
-          "name": "range to text",
-          "value": 2
-        }
-      ],
-      "maxDataPoints": 100,
-      "nullPointMode": "connected",
-      "nullText": null,
-      "options": {},
-      "postfix": " km",
-      "postfixFontSize": "70%",
-      "prefix": "",
-      "prefixFontSize": "50%",
-      "rangeMaps": [
-        {
-          "from": "null",
-          "text": "N/A",
-          "to": "null"
-        }
-      ],
-      "sparkline": {
-        "fillColor": "rgba(31, 118, 189, 0.18)",
-        "full": false,
-        "lineColor": "rgb(31, 120, 193)",
-        "show": false,
-        "ymax": null,
-        "ymin": null
-      },
-      "tableColumn": "",
-      "targets": [
-        {
-          "groupBy": [],
-          "measurement": "workouts",
-          "orderByTime": "ASC",
-          "policy": "default",
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "totalDistance"
-                ],
-                "type": "field"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "type",
-              "operator": "=",
-              "value": "running"
             }
           ]
         }
@@ -3748,8 +3748,218 @@
       },
       "gridPos": {
         "h": 4,
-        "w": 2,
+        "w": 3,
         "x": 0,
+        "y": 46
+      },
+      "id": 25,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false,
+        "ymax": null,
+        "ymin": null
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "groupBy": [],
+          "measurement": "workouts",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "duration"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "swimming"
+            }
+          ]
+        }
+      ],
+      "thresholds": "",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Duration",
+      "type": "singlestat",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "total"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": true,
+      "colors": [
+        "#B877D9",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "datasource": "default",
+      "decimals": 0,
+      "format": "m",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 3,
+        "y": 46
+      },
+      "id": 33,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false,
+        "ymax": null,
+        "ymin": null
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "groupBy": [],
+          "measurement": "workouts",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "duration"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "swimming"
+            }
+          ]
+        }
+      ],
+      "thresholds": "",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Average",
+      "type": "singlestat",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "avg"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": true,
+      "colors": [
+        "#B877D9",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "datasource": "default",
+      "decimals": 0,
+      "format": "m",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 5,
         "y": 46
       },
       "id": 65,
@@ -3854,7 +4064,7 @@
       "gridPos": {
         "h": 4,
         "w": 3,
-        "x": 2,
+        "x": 7,
         "y": 46
       },
       "id": 66,
@@ -3918,216 +4128,6 @@
               "key": "type",
               "operator": "=",
               "value": "strength"
-            }
-          ]
-        }
-      ],
-      "thresholds": "",
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Average",
-      "type": "singlestat",
-      "valueFontSize": "80%",
-      "valueMaps": [
-        {
-          "op": "=",
-          "text": "N/A",
-          "value": "null"
-        }
-      ],
-      "valueName": "avg"
-    },
-    {
-      "cacheTimeout": null,
-      "colorBackground": false,
-      "colorValue": true,
-      "colors": [
-        "#B877D9",
-        "rgba(237, 129, 40, 0.89)",
-        "#d44a3a"
-      ],
-      "datasource": "default",
-      "decimals": 0,
-      "format": "m",
-      "gauge": {
-        "maxValue": 100,
-        "minValue": 0,
-        "show": false,
-        "thresholdLabels": false,
-        "thresholdMarkers": true
-      },
-      "gridPos": {
-        "h": 4,
-        "w": 3,
-        "x": 5,
-        "y": 46
-      },
-      "id": 24,
-      "interval": null,
-      "links": [],
-      "mappingType": 1,
-      "mappingTypes": [
-        {
-          "name": "value to text",
-          "value": 1
-        },
-        {
-          "name": "range to text",
-          "value": 2
-        }
-      ],
-      "maxDataPoints": 100,
-      "nullPointMode": "connected",
-      "nullText": null,
-      "options": {},
-      "postfix": "",
-      "postfixFontSize": "50%",
-      "prefix": "",
-      "prefixFontSize": "50%",
-      "rangeMaps": [
-        {
-          "from": "null",
-          "text": "N/A",
-          "to": "null"
-        }
-      ],
-      "sparkline": {
-        "fillColor": "rgba(31, 118, 189, 0.18)",
-        "full": false,
-        "lineColor": "rgb(31, 120, 193)",
-        "show": false,
-        "ymax": null,
-        "ymin": null
-      },
-      "tableColumn": "",
-      "targets": [
-        {
-          "groupBy": [],
-          "measurement": "workouts",
-          "orderByTime": "ASC",
-          "policy": "default",
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "duration"
-                ],
-                "type": "field"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "type",
-              "operator": "=",
-              "value": "running"
-            }
-          ]
-        }
-      ],
-      "thresholds": "",
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Duration",
-      "type": "singlestat",
-      "valueFontSize": "80%",
-      "valueMaps": [
-        {
-          "op": "=",
-          "text": "N/A",
-          "value": "null"
-        }
-      ],
-      "valueName": "total"
-    },
-    {
-      "cacheTimeout": null,
-      "colorBackground": false,
-      "colorValue": true,
-      "colors": [
-        "#B877D9",
-        "rgba(237, 129, 40, 0.89)",
-        "#d44a3a"
-      ],
-      "datasource": "default",
-      "decimals": 0,
-      "format": "m",
-      "gauge": {
-        "maxValue": 100,
-        "minValue": 0,
-        "show": false,
-        "thresholdLabels": false,
-        "thresholdMarkers": true
-      },
-      "gridPos": {
-        "h": 4,
-        "w": 2,
-        "x": 8,
-        "y": 46
-      },
-      "id": 34,
-      "interval": null,
-      "links": [],
-      "mappingType": 1,
-      "mappingTypes": [
-        {
-          "name": "value to text",
-          "value": 1
-        },
-        {
-          "name": "range to text",
-          "value": 2
-        }
-      ],
-      "maxDataPoints": 100,
-      "nullPointMode": "connected",
-      "nullText": null,
-      "options": {},
-      "postfix": "",
-      "postfixFontSize": "50%",
-      "prefix": "",
-      "prefixFontSize": "50%",
-      "rangeMaps": [
-        {
-          "from": "null",
-          "text": "N/A",
-          "to": "null"
-        }
-      ],
-      "sparkline": {
-        "fillColor": "rgba(31, 118, 189, 0.18)",
-        "full": false,
-        "lineColor": "rgb(31, 120, 193)",
-        "show": false,
-        "ymax": null,
-        "ymin": null
-      },
-      "tableColumn": "",
-      "targets": [
-        {
-          "groupBy": [],
-          "measurement": "workouts",
-          "orderByTime": "ASC",
-          "policy": "default",
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "duration"
-                ],
-                "type": "field"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "type",
-              "operator": "=",
-              "value": "running"
             }
           ]
         }
@@ -4378,8 +4378,218 @@
       },
       "gridPos": {
         "h": 4,
-        "w": 3,
+        "w": 2,
         "x": 0,
+        "y": 50
+      },
+      "id": 50,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": " kcal",
+      "postfixFontSize": "70%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false,
+        "ymax": null,
+        "ymin": null
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "groupBy": [],
+          "measurement": "workouts",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "totalEnergyBurned"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "swimming"
+            }
+          ]
+        }
+      ],
+      "thresholds": "",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Energy",
+      "type": "singlestat",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "total"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": true,
+      "colors": [
+        "#FF9830",
+        "#FF9830",
+        "#d44a3a"
+      ],
+      "datasource": "default",
+      "decimals": 0,
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 2,
+        "y": 50
+      },
+      "id": 53,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": " kcal",
+      "postfixFontSize": "70%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false,
+        "ymax": null,
+        "ymin": null
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "groupBy": [],
+          "measurement": "workouts",
+          "orderByTime": "ASC",
+          "policy": "default",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "totalEnergyBurned"
+                ],
+                "type": "field"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "type",
+              "operator": "=",
+              "value": "swimming"
+            }
+          ]
+        }
+      ],
+      "thresholds": "",
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Average",
+      "type": "singlestat",
+      "valueFontSize": "80%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "N/A",
+          "value": "null"
+        }
+      ],
+      "valueName": "avg"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": false,
+      "colorValue": true,
+      "colors": [
+        "#FF9830",
+        "#FF9830",
+        "#d44a3a"
+      ],
+      "datasource": "default",
+      "decimals": 0,
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 5,
         "y": 50
       },
       "id": 67,
@@ -4484,7 +4694,7 @@
       "gridPos": {
         "h": 4,
         "w": 2,
-        "x": 3,
+        "x": 8,
         "y": 50
       },
       "id": 68,
@@ -4548,216 +4758,6 @@
               "key": "type",
               "operator": "=",
               "value": "strength"
-            }
-          ]
-        }
-      ],
-      "thresholds": "",
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Average",
-      "type": "singlestat",
-      "valueFontSize": "80%",
-      "valueMaps": [
-        {
-          "op": "=",
-          "text": "N/A",
-          "value": "null"
-        }
-      ],
-      "valueName": "avg"
-    },
-    {
-      "cacheTimeout": null,
-      "colorBackground": false,
-      "colorValue": true,
-      "colors": [
-        "#FF9830",
-        "#FF9830",
-        "#d44a3a"
-      ],
-      "datasource": "default",
-      "decimals": 0,
-      "format": "none",
-      "gauge": {
-        "maxValue": 100,
-        "minValue": 0,
-        "show": false,
-        "thresholdLabels": false,
-        "thresholdMarkers": true
-      },
-      "gridPos": {
-        "h": 4,
-        "w": 2,
-        "x": 5,
-        "y": 50
-      },
-      "id": 51,
-      "interval": null,
-      "links": [],
-      "mappingType": 1,
-      "mappingTypes": [
-        {
-          "name": "value to text",
-          "value": 1
-        },
-        {
-          "name": "range to text",
-          "value": 2
-        }
-      ],
-      "maxDataPoints": 100,
-      "nullPointMode": "connected",
-      "nullText": null,
-      "options": {},
-      "postfix": " kcal",
-      "postfixFontSize": "70%",
-      "prefix": "",
-      "prefixFontSize": "50%",
-      "rangeMaps": [
-        {
-          "from": "null",
-          "text": "N/A",
-          "to": "null"
-        }
-      ],
-      "sparkline": {
-        "fillColor": "rgba(31, 118, 189, 0.18)",
-        "full": false,
-        "lineColor": "rgb(31, 120, 193)",
-        "show": false,
-        "ymax": null,
-        "ymin": null
-      },
-      "tableColumn": "",
-      "targets": [
-        {
-          "groupBy": [],
-          "measurement": "workouts",
-          "orderByTime": "ASC",
-          "policy": "default",
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "totalEnergyBurned"
-                ],
-                "type": "field"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "type",
-              "operator": "=",
-              "value": "running"
-            }
-          ]
-        }
-      ],
-      "thresholds": "",
-      "timeFrom": null,
-      "timeShift": null,
-      "title": "Energy",
-      "type": "singlestat",
-      "valueFontSize": "80%",
-      "valueMaps": [
-        {
-          "op": "=",
-          "text": "N/A",
-          "value": "null"
-        }
-      ],
-      "valueName": "total"
-    },
-    {
-      "cacheTimeout": null,
-      "colorBackground": false,
-      "colorValue": true,
-      "colors": [
-        "#FF9830",
-        "#FF9830",
-        "#d44a3a"
-      ],
-      "datasource": "default",
-      "decimals": 0,
-      "format": "none",
-      "gauge": {
-        "maxValue": 100,
-        "minValue": 0,
-        "show": false,
-        "thresholdLabels": false,
-        "thresholdMarkers": true
-      },
-      "gridPos": {
-        "h": 4,
-        "w": 3,
-        "x": 7,
-        "y": 50
-      },
-      "id": 54,
-      "interval": null,
-      "links": [],
-      "mappingType": 1,
-      "mappingTypes": [
-        {
-          "name": "value to text",
-          "value": 1
-        },
-        {
-          "name": "range to text",
-          "value": 2
-        }
-      ],
-      "maxDataPoints": 100,
-      "nullPointMode": "connected",
-      "nullText": null,
-      "options": {},
-      "postfix": " kcal",
-      "postfixFontSize": "70%",
-      "prefix": "",
-      "prefixFontSize": "50%",
-      "rangeMaps": [
-        {
-          "from": "null",
-          "text": "N/A",
-          "to": "null"
-        }
-      ],
-      "sparkline": {
-        "fillColor": "rgba(31, 118, 189, 0.18)",
-        "full": false,
-        "lineColor": "rgb(31, 120, 193)",
-        "show": false,
-        "ymax": null,
-        "ymin": null
-      },
-      "tableColumn": "",
-      "targets": [
-        {
-          "groupBy": [],
-          "measurement": "workouts",
-          "orderByTime": "ASC",
-          "policy": "default",
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "totalEnergyBurned"
-                ],
-                "type": "field"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "type",
-              "operator": "=",
-              "value": "running"
             }
           ]
         }
@@ -5398,5 +5398,5 @@
   "timezone": "",
   "title": "Year dashboard",
   "uid": "apple-watch-workouts",
-  "version": 1
+  "version": 10
 }
