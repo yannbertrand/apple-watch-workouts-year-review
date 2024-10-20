@@ -1,6 +1,6 @@
 {
   "name": "apple-watch-workouts-year-review",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Insert your Apple Watch Workouts data in an InfluxDB database",
   "main": "index.js",
   "repository": "git@github.com:yannbertrand/apple-watch-workouts-year-review.git",
