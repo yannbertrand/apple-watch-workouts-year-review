@@ -1,9 +1,9 @@
 # Welcome to Apple Watch Workouts year review 👋
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/yannbertrand/apple-watch-workouts-year-review/test)](https://github.com/yannbertrand/apple-watch-workouts-year-review/actions/workflows/test.yml)
-![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/yannbertrand/apple-watch-workouts-year-review/test.yaml)](https://github.com/yannbertrand/apple-watch-workouts-year-review/actions/workflows/test.yaml)
+![Version](https://img.shields.io/badge/version-0.1.1-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./license)
-[![Twitter: _YannBertrand](https://img.shields.io/twitter/follow/_YannBertrand.svg?style=social)](https://twitter.com/_YannBertrand)
+[![Twitter: _YannBertrand](https://img.shields.io/twitter/follow/_YannBertrand.svg?style=social)](https://x.com/_YannBertrand)
 
 **Stability: 1 - Experimental**
 
@@ -17,10 +17,10 @@
 
 ## 🏗 Install
 
-Clone the repo using Git. You'll need Docker, Node.js (tested with v12) and Yarn (tested with v1.21.1).
+Clone the repo using Git. You'll need Docker, Node.js (tested with v22)
 
 ```sh
-yarn install
+npm ci
 ```
 
 ## 🚀 Usage
@@ -65,7 +65,7 @@ Please go to [Grafana documentation](https://grafana.com/docs/grafana/latest/fea
 
 ### Why is my preferred activity not displayed?
 
-Because I didn't take time to find them automatically (cycling, walking, swimming, strength training, running and volleyball are hardcoded). Contributions are welcome!
+Because I didn't take time to find them automatically (cycling, walking, running, swimming, strengh training and volleyball are hardcoded). Contributions are welcome!
 
 ### How do I update my data?
 
