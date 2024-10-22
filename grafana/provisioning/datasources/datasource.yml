@@ -10,13 +10,12 @@ datasources:
     access: proxy
     orgId: 1
     url: http://apple_watch_influxdb:8086
+    database: $APPLE_WATCH_INFLUX_BUCKET
     jsonData:
-      version: Flux
-      organization: my_org
-      defaultBucket: apple_watch
-      tlsSkipVerify: true
+      httpHeaderName1: 'Authorization'
+      timeInterval: 1d
     secureJsonData:
-      token: my_token
+      httpHeaderValue1: 'Token $APPLE_WATCH_INFLUX_TOKEN'
     isDefault: true
     editable: true
     options:
