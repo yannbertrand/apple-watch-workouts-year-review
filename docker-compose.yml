@@ -14,6 +14,9 @@ services:
     container_name: apple_watch_grafana
     ports:
       - "3000:3000"
+    environment:
+      - APPLE_WATCH_INFLUX_BUCKET=$APPLE_WATCH_INFLUX_BUCKET
+      - APPLE_WATCH_INFLUX_TOKEN=$APPLE_WATCH_INFLUX_TOKEN
     links:
       - influxdb
     volumes:
