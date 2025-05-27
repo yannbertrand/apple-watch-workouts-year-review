@@ -18,7 +18,7 @@
     "influx": "5.10.0",
     "sax": "1.4.1",
     "unzipper": "0.12.3",
-    "yargs": "17.7.2"
+    "yargs": "18.0.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
