@@ -25,8 +25,8 @@
   },
   "overrides": [
     {
-      "include": [
-        "*.yml"
+      "includes": [
+        "**/*.yml"
       ],
       "javascript": {
         "formatter": {
@@ -35,8 +35,8 @@
       }
     },
     {
-      "include": [
-        "*.json"
+      "includes": [
+        "**/*.json"
       ],
       "formatter": {
         "indentWidth": 2,
