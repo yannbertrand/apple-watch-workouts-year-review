@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`mapWorkoutAttributes(attributes) with existing workoutActivityType should set a "creationDate" ISO date key 1`] = `"2019-12-17T19:57:46.000Z"`;
 
