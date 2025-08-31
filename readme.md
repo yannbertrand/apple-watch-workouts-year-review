@@ -35,7 +35,6 @@ In the meantime, export your Apple Watch data from your iPhone. In the Health Ap
 
 ![Click on your picture](./images/export-step-1.jpeg)
 ![Export All Health Data](./images/export-step-2.jpeg)
-![Export](./images/export-step-3.jpeg)
 
 Send the zip file to your computer.
 
