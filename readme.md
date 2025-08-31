@@ -55,7 +55,7 @@ Grab a coffee while your data is read and inserted in InfluxDB (my data takes mo
 
 ### How do I use this with another tracker?
 
-The project has been specially designed for the Apple Watch Health data but it shouldn't be too complicated to do it for another tracker. Just ask me if you want to do it!
+The project has been specially designed for the Apple Watch Health data.
 
 ### How do I replace a chart?
 
