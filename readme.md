@@ -61,10 +61,6 @@ The project has been specially designed for the Apple Watch Health data.
 
 Please go to [Grafana documentation](https://grafana.com/docs/grafana/latest/features/panels/singlestat/) and have fun exploring 😊.
 
-### Why is my preferred activity not displayed?
-
-Because I didn't take time to find them automatically (cycling, walking, running, swimming, strengh training and volleyball are hardcoded). Contributions are welcome!
-
 ### How do I update my data?
 
 You'll have to export the zip file and run `npm start export.zip` again.
