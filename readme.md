@@ -17,7 +17,7 @@
 
 ## 🏗 Install
 
-Clone the repo using Git. You'll need Docker, Node.js (tested with v22)
+Clone the repo using Git. You'll need Docker, Node.js (tested with v24)
 
 ```sh
 npm ci
