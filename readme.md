@@ -51,8 +51,6 @@ Grab a coffee while your data is read and inserted in InfluxDB (my data takes mo
 
 **This dashboard is just a proof of concept**, take full advantage of Grafana, try to edit the panels and even add yours if you want to!
 
-> _Please make sure to show me your dashboard on [Twitter](https://twitter.com/intent/tweet?text=Hey%20@_YannBertrand%20%F0%9F%91%8B%0A%0A%F0%9F%93%88%20Take%20a%20look%20at%20my%202019%20workouts%20dashboard) 😁_
-
 ## ❓ Questions
 
 ### How do I use this with another tracker?
