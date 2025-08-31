@@ -11,9 +11,9 @@
 
 ## ✨ Demo
 
-![Summary example screenshot](./images/summary.png)
-![Types example screenshot](./images/types.png)
-![Bicycle example screenshot](./images/bicycle.png)
+![Summary example screenshot](./images/summary.jpg)
+![Types example screenshot](./images/types.jpg)
+![Bicycle example screenshot](./images/bicycle.jpg)
 
 ## 🏗 Install
 
