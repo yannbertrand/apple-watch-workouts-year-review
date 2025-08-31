@@ -219,7 +219,7 @@
             "fixedColor": "blue",
             "mode": "fixed"
           },
-          "decimals": 0,
+          "decimals": 2,
           "displayName": "🛣",
           "mappings": [
             {
