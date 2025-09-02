@@ -3,7 +3,6 @@
 [![Build Status](https://img.shields.io/github/actions/workflow/status/yannbertrand/apple-watch-workouts-year-review/test.yaml)](https://github.com/yannbertrand/apple-watch-workouts-year-review/actions/workflows/test.yaml)
 ![Version](https://img.shields.io/badge/version-0.1.1-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./license)
-[![Twitter: _YannBertrand](https://img.shields.io/twitter/follow/_YannBertrand.svg?style=social)](https://x.com/_YannBertrand)
 
 **Stability: 1 - Experimental**
 
