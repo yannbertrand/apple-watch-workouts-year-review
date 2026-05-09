@@ -21,7 +21,7 @@
     "yargs": "18.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.14",
+    "@biomejs/biome": "2.4.15",
     "jest": "30.4.2"
   }
 }
