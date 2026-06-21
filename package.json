@@ -17,7 +17,7 @@
     "@influxdata/influxdb-client-apis": "1.35.0",
     "influx": "5.12.0",
     "sax": "1.6.0",
-    "unzipper": "0.12.3",
+    "unzipper": "0.12.5",
     "yargs": "18.0.0"
   },
   "devDependencies": {
