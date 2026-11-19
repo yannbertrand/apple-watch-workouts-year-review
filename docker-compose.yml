@@ -1,6 +1,6 @@
 services:
   influxdb:
-    image: influxdb:2.9
+    image: influxdb:2.10
     container_name: apple_watch_influxdb
     ports:
       - "8083:8083"
